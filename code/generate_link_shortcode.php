@@ -17,3 +17,5 @@ function add_link_short_code( $atts ){
     $link = home_url( '/customlink/' . bp_core_get_username( get_current_user_id() ) . '/customlink/' );
     return "<a href='". esc_attr( $link ) ."'>" . $atts['text'] . "</a>";
 }
+
+?>
