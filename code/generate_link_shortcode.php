@@ -1,6 +1,7 @@
 <?php
 
 add_shortcode( 'LINK-SHORTCODE', 'add_link_short_code' );
+
 function add_link_short_code( $atts ){
     $atts = shortcode_atts( 
       array(
