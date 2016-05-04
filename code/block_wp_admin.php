@@ -1,5 +1,7 @@
 <?php
 
+add_action( 'init', 'blockusers_init' );
+
 function blockusers_init() {
 	if ( is_admin() && ! current_user_can( 'administrator' ) &&
 			! ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
@@ -7,7 +9,5 @@ function blockusers_init() {
 		exit;
 	}
 }
-
-add_action( 'init', 'blockusers_init' );
 
 ?>
