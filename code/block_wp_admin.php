@@ -1,5 +1,4 @@
 <?php
-add_action( 'init', 'blockusers_init' );
 
 function blockusers_init() {
 	if ( is_admin() && ! current_user_can( 'administrator' ) &&
@@ -8,4 +7,7 @@ function blockusers_init() {
 		exit;
 	}
 }
+
+add_action( 'init', 'blockusers_init' );
+
 ?>
